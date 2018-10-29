@@ -31,7 +31,7 @@ export default class AlbumsContainer extends Component {
   removeFavorite = (key) => {
     base.remove('itunes-fav-albums/'+key);
   }
-  
+
   render() {
     return (
       <React.Fragment>
@@ -63,7 +63,7 @@ export default class AlbumsContainer extends Component {
           }
 
         </div>
-        <div className="col-xs-12 col-sm-12 col-md-3">
+        <div className="preview-container col-xs-12 col-sm-12 col-md-3">
        
         <div className="row">< h4 className="text-left fav-heading"> Your Favorite Albums </h4> 
         
