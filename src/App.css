@@ -1,32 +1,154 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600');
+
+body {
+  background:#f9f9f9;
+  font-family: 'Nunito', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.main-container {
+  width: 70%;
+  float: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.preview-container {
+    width: 30%;
+    float: left;
+    background: #fff;
+    box-shadow: -1px 0px 2px 0px #d4d1d140;
+  }
+
+  .album-card {
+  height: 250px;
+  background-size: 100% 100%;
+  box-shadow: 0px 0px 1px 2px #dcdcdcc7;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.fav-album-card{
+  height: 175px;
+  background-size: 100% 100%;
+  box-shadow: 0px 0px 1px 2px #dcdcdcc7;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.prev-album-card {
+  height: 325px;
+  background-size: 100% 100%;
+  box-shadow: 0px 0px 1px 2px #dcdcdcc7;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+
+.m-1 {
+  margin: .95rem !important;
+}
+
+.album-card:hover > .action-btns{
+  display: block;
+}
+.title-heading{
+  padding-top: 10px;
+  padding-left:5px; 
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.highlight-text{
+  font-weight: 600;
+  font-size:18px;
+}
+
+.fav-heading{
+  font-size: 19px;
+  padding: 10px;
+  font-weight: 700;
+  width: 100%;
+  border-bottom:1px solid #f3f3f3;
+}
+/* 
+.action-btns {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  width: 100%;
+  height: 35px;
+  padding-top: 6px;
+  display: block;
+} */
+
+.quickview-btn{
+  font-size: 15px;
+  color: #fff;
+  padding-left:15px;
+  cursor: pointer;
+}
+
+.addFav-btn{
+  font-size: 15px;
+  color: #fff;
+  padding-right:15px;
+  cursor: pointer;
+}
+
+.emptyFav {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100vH;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+img.empty-fav-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-container {
+  width: 380px;
+  height: 75px;
+  padding: 10px 0px;
+  margin: 0 auto;
+}
+
+.search-box {
+  border: 3px solid #fff;
+  width: 165px;
+  margin: 0 15px;
+  border-radius: 25px;
+  font-size: 15px;
+  outline: 0;
+  padding: 8px 10px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0px 0px 0.5px 0px #ddd;
+}
+
+.search-submit-btn {
+  border: 0;
+  outline:0 !important;
+  padding: 10px;
+  font-size: 16px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.float-left-helper {
+  width: 90%;
+  float: left;
+}
+.float-right-helper {
+  width: 10%;
+  float: left;
+  padding-top: 9px;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
 }

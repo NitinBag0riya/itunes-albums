@@ -1,0 +1,50 @@
+
+const QuickView = (props) => {
+  return(
+      ( props.show) ? 
+        <div className="quick-view-container col-sm-12" style={{'display':props.show}}>
+        <div className="row">
+       
+
+      <div className=" col-md-12">
+                <div>
+                  <SimpleImg src={ props.data['im:image'][2].label }  imgClassName="prev-album-card" alt={props.data['im:name'].label}  />
+                </div>
+                <p class="text-left title-heading">veerji Is Here</p>
+
+                <ul className="list-group">
+                  <li className="list-group-item">Cras justo odio</li>
+                  <li className="list-group-item">Dapibus ac facilisis in</li>
+                  <li className="list-group-item">Morbi leo risus</li>
+                  <li className="list-group-item">Porta ac consectetur ac</li>
+                  <li className="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <br />
+                <button className="btn btn-danger btn-md btn-block">Add to Favorite </button>
+          
+              </div>
+            </div>
+          </div>
+        : ''
+  )
+}
+
+
+const mapStateToProps = (state) => {
+  return {
+    albums : state.albums,
+    showPanel: state.showPanel,
+    selectedAlbum : state.selectedAlbum,
+
+  }
+}
+
+
+const mapDispatchToProps = ( dispatch ) =>{
+  return {
+    loadPreviewData :  (album) => { dispatch(loadPreviewData(album)) }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AlbumsList);
+
