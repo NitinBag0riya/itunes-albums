@@ -1,12 +1,12 @@
 var Rebase = require('re-base');
 var firebase = require('firebase');
 var app = firebase.initializeApp({
-    apiKey: "AIzaSyCJzuNNOeeTEukHFbpjvMPrR4zI9KSTm-o",
-    authDomain: "gupshup-df8c5.firebaseapp.com",
-    databaseURL: "https://gupshup-df8c5.firebaseio.com",
-    projectId: "gupshup-df8c5",
-    storageBucket: "gupshup-df8c5.appspot.com",
-    messagingSenderId: "237645701062"
+    apiKey: "XXXXXX",
+    authDomain: "XXXXXXX",
+    databaseURL: "XXXXX",
+    projectId: "XXXXXXXX",
+    storageBucket: "XXXXXXXX",
+    messagingSenderId: "XXXXXXXXXXXX"
 });
 
 var base = Rebase.createClass(app.database());
